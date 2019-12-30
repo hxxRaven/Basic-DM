@@ -109,9 +109,10 @@ def runExpe(data, theta, batchSize, stopType, thresh, alpha):
     ax.set_xlabel('Iterations')
     ax.set_ylabel('Cost')
     ax.set_title(name.upper() + ' - Error vs. Iteration')
-    plt.ioff()
     plt.show()
     return theta
+
+
 
 '''计算精度'''
 def predict(X,theta):
@@ -168,5 +169,5 @@ if __name__ == '__main__':
     ax.set_ylable=('Exam2 Score')
     ax.legend()
     plt.show()
-
+    plt.pause(0)
     main(pdData)
