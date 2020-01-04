@@ -117,19 +117,20 @@ titanic['NameLength'] = titanic['Name'].apply(lambda x:len(x))
 '''提取称呼模块'''
 import re
 def get_title(name):
-    title_search = re.search(' ([A-Za-z]+)\.', name)
+    title_search = re.search(' ([A-Za-z]+)\.', name)        #正则表达式匹配称呼模式
     if title_search:
-        return title_search.group(1)
+        a = title_search.group()
+        return title_search.group(1)                        #将所有能匹配模式中第一个括号内的项打包为元组
     return ""
 
-titles = titanic['Name'].apply(get_title)
+titles = titanic['Name'].apply(get_title)                   #按样板进行，同时赋给新的ndarry
 print(pd.value_counts(titles))
 
 title_mapping = {"Mr": 1, "Miss": 2, "Mrs": 3, "Master": 4,
                  "Dr": 5, "Rev": 6, "Major": 7, "Col": 7, "Mlle": 8,
                  "Mme": 8, "Don": 9, "Lady": 10, "Countess": 10,
                  "Jonkheer": 10, "Sir": 9, "Capt": 7, "Ms": 2}
-for k,v in title_mapping.items():
+for k,v in title_mapping.items():                                   #字典循环映射
     titles[titles == k] =v
 
 print(pd.value_counts(titles))
@@ -169,12 +170,12 @@ for train, test in kf.split(titanic[predictors_last]):
     train_target = titanic["Survived"].iloc[train]
     full_test_predictions = []
     # Make predictions for each algorithm on each fold
-    for alg, predictors in algorithms:
+    for alg, predictors_last in algorithms:
         # Fit the algorithm on the training data.
-        alg.fit(titanic[predictors].iloc[train,:], train_target)
+        alg.fit(titanic[predictors_last].iloc[train,:], train_target)
         # Select and predict on the test fold.
         # The .astype(float) is necessary to convert the dataframe to all floats and avoid an sklearn error.
-        test_predictions = alg.predict_proba(titanic[predictors].iloc[test,:].astype(float))[:,1]
+        test_predictions = alg.predict_proba(titanic[predictors_last].iloc[test,:].astype(float))[:,1]
         full_test_predictions.append(test_predictions)
     # Use a simple ensembling scheme -- just average the predictions to get the final classification.
     test_predictions = (full_test_predictions[0] + full_test_predictions[1]) / 2
@@ -184,7 +185,8 @@ for train, test in kf.split(titanic[predictors_last]):
     predictions.append(test_predictions)
 
 # Put all the predictions together into one array.
-predictions = np.concatenate(predictions, axis=0)
+
+predictions = np.concatenate(predictions, axis=0)           #按行将array拼接起来,构成一个一行n列的ndarry
 
 # Compute accuracy by comparing to the training data.
 accuracy = sum(predictions == titanic["Survived"]) / len(predictions)
