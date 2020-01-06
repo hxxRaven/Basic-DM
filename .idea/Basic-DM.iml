@@ -6,6 +6,7 @@
       <sourceFolder url="file://$MODULE_DIR$/Decision_Tree" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Titanic_0.1" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Bayes" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SVM" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
