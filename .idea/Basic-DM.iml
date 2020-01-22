@@ -9,6 +9,8 @@
       <sourceFolder url="file://$MODULE_DIR$/SVM" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Compress_Imagine" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Cluster" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/PCA" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/KNN" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
