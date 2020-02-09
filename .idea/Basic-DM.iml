@@ -14,6 +14,8 @@
       <sourceFolder url="file://$MODULE_DIR$/Network" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/xgboost_test" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/gensim_try" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/wiki_model" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/FuelComsuption" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
