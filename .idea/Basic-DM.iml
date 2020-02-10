@@ -15,7 +15,9 @@
       <sourceFolder url="file://$MODULE_DIR$/xgboost_test" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/gensim_try" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/wiki_model" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/FuelComsuption" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/FuelComsuption_LineRegression" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/OverseaAdmission_LogisticalRegression" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Kobe" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
