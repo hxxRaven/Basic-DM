@@ -19,6 +19,8 @@
       <sourceFolder url="file://$MODULE_DIR$/OverseaAdmission_LogisticalRegression" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Kobe" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ARIMA" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ARIMA_Shares" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ATimeClassifier(tsfresh)" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
