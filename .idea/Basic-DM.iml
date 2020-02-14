@@ -21,6 +21,8 @@
       <sourceFolder url="file://$MODULE_DIR$/ARIMA" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ARIMA_Shares" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ATimeClassifier(tsfresh)" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ATimeWikiEDA" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ATime_Loans" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
