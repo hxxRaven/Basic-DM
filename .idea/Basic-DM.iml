@@ -23,6 +23,8 @@
       <sourceFolder url="file://$MODULE_DIR$/ATimeClassifier(tsfresh)" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ATimeWikiEDA" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ATime_Loans" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/UserChurn" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/RedCard_EDA" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
