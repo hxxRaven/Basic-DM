@@ -25,6 +25,7 @@
       <sourceFolder url="file://$MODULE_DIR$/ATime_Loans" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/UserChurn" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/RedCard_EDA" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AquastatEDA" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
